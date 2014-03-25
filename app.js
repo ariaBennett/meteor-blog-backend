@@ -12,7 +12,7 @@ var path = require('path');
 
 var app = express();
 var config = {};
-config.allowedDomains = 'http://localhost:3000';
+config.allowedDomains = 'http://ariablog.meteor.com';
 
 
 console.log(config.allowedDomains);
