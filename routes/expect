@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+set send_slow {1 .001}
+
+spawn /usr/local/bin/meteor login
+expect "Username: " {send -s "ariabot\r"}
+expect "Password: " {send -s "ariabennett\r"}
+expect "Thanks for being a Meteor developer!"
